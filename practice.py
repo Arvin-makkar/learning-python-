@@ -1,3 +1,18 @@
 print("Hello I am starting my python journey")\
 name="Arvin"
 print("My name is", name)
+print('Hi')
+print('👋Howdy')
+print('Morning Dharma')
+print('Evening Sonny')
+print('       1')
+print('     2 3')
+print('   4 5 6')
+print('7 8 9 10')
+print('DDDD  L')
+print('D  D  L')
+print('D  D  L')
+print('D  D  L')
+print('D  D  L')
+print('DDDD  L')
+print('Congrats ! you\'ve made it to the end of chapter one!')
