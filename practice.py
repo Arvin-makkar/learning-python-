@@ -96,4 +96,140 @@ age = int(input"enter you dog's age: "))
 human_age = age * 7 
 print(human_age)
 
+import random
+num = random.randint(0,1) 
+if num > 0.5:
+  print('Heads')
+else:
+    print('Tails')
+    
+grade = 70
+if grade > 60:
+  print('You passed.')
+else:
+  print('You failed')
+
+ph = int(input('Enter a ph value (0-14):'))
+if ph > 7:
+  print ('Basic.')
+elif ph < 7:
+  print ('Acidic.')
+else:
+  print('Neutral.')
+
+import random 
+question = input('Question:   ')
+random_number = random.randint(1,9)
+if random_number == 1:
+  answer = 'yes - definitely'
+elif random_number == 2:
+  answer = 'it is decidely so'
+elif random_number == 3:
+  answer = 'without a doubt'
+elif random_number == 4:
+  answer = 'reply hazy, try again'
+elif random_number == 5:
+  answer = 'ask again later'
+elif random_number == 6:
+  answer = 'better not tell you now'
+elif random_number == 7:
+  answer = 'my sources say no' 
+elif random_number == 8:
+  answer = 'outlook not so good' 
+elif random_number == 9:
+  answer = 'very doubtful'
+else:
+  answer = 'Error'
+print('magic 8 ball:' + answer)
+
+height = int(input('what is your height (cm)?'))
+credits = int(input('how many credits do you have?'))
+
+if height >= 137 and credits >= 10:
+  print("Enjoy the ride!")
+elif height < 137 and credits < 10:
+  print("You are not tall wnough to ride.")
+elif credits < 10 and height >= 137:
+  print("You don't have enough credits")
+else:
+  print("You are not tall enough for this ride, nor you have credits")
+
+gryffindor = 0
+hufflepuff = 0
+ravenclaw = 0
+slytherin = 0
+
+print('===============')
+print('The Sorting Hat')
+print('===============')
+
+# ~~~~~~~~~~~~~~~ Question 1 ~~~~~~~~~~~~~~~
+
+print('Q1) Do you like Dawn or Dusk?')
+
+print('  1) Dawn')
+print('  2) Dusk')
+
+answer = int(input('Enter answer (1-2): '))
+
+if answer == 1:
+  gryffindor += 1
+  ravenclaw += 1
+elif answer == 2:
+  hufflepuff += 1
+  slytherin +=1
+else:
+  print('Wrong input.')
+
+# ~~~~~~~~~~~~~~~ Question 2 ~~~~~~~~~~~~~~~
+
+print("\nQ2) When I'm dead, I want people to remember me as:")
+
+print('  1) The Good')
+print('  2) The Great')
+print('  3) The Wise')
+print('  4) The Bold')
+
+answer = int(input('Enter your answer (1-4): '))
+
+if answer == 1:
+  hufflepuff += 2
+elif answer == 2:
+  slytherin += 2
+elif answer == 3:
+  ravenclaw += 2
+elif answer == 4:
+  gryffindor += 2
+else:
+  print('Wrong input.')
+
+# ~~~~~~~~~~~~~~~ Question 3 ~~~~~~~~~~~~~~~
+
+print('\nQ3) Which kind of instrument most pleases your ear?')
+
+print('  1) The violin')
+print('  2) The trumpet')
+print('  3) The piano')
+print('  4) The drum')
+
+answer = int(input('Enter your answer (1-4): '))
+
+if answer == 1:
+  slytherin += 4
+elif answer == 2:
+  hufflepuff += 4
+elif answer == 3:
+  ravenclaw +=4
+elif answer == 4:
+  gryffindor += 4
+else:
+  print('Wrong input.')
+  
+print("Gryffindor: ", gryffindor)
+print("Ravenclaw: ", ravenclaw)
+print("Hufflepuff: ", hufflepuff)
+print("Slytherin: ", slytherin)
+
+
+
     
