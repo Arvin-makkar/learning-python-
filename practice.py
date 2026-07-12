@@ -230,6 +230,80 @@ print("Ravenclaw: ", ravenclaw)
 print("Hufflepuff: ", hufflepuff)
 print("Slytherin: ", slytherin)
 
+rating = 4.7
+if rating > 4.5:
+  print('perfection')
+elif rating > 4:
+  print('excellent')
+elif rating > 3:
+  print('good')
+elif rating > 2:
+  print('fair')
+else:
+  print('poor')
 
+grade = int(input('enter your grate level:'))
+if grade == 9:
+  print('freshman')
+elif grade == 10:
+  print('sophomore')
+elif grade == 11:
+  print('junior')
+elif grade == 12:
+  print('senior')
+else:
+  print('TBD')
 
-    
+import random
+fact = random.randint(1,6)
+if fact == 1:
+  print('Flamingos turn pink by eating shrimp.')
+elif fact == 2:
+  print('Honey never goes bad.')
+elif fact == 3:
+  print('Shrimp can only swim backwards.')
+elif fact == 4:
+  print('A taste bud\'s life is about 10 days.')
+elif fact == 5:
+  print('You can\'t sneeze while sleeping.')
+else:
+  print('Tiny pocket in jeans was for watches.')
+
+month = int(input('enter month number:'))
+if month == 1 or month == 2 or month == 3:
+  print('Winter 🌨️')
+elif month == 4 or month == 5 or month == 6:
+  print('Spring 🌱')
+elif month == 7 or month == 8 or month == 9:
+  print('Summer 🌻')
+elif month == 10 or month == 11 or month == 12:
+  print('Autumn 🍂')
+else:
+  print('Invalid')
+
+earth_weight = float(input('enter your weight:'))
+planet = int(input('enter the planet number:'))
+destination_weight = earth_weight * 0.38
+if planet == 1:
+  destination_weight = earth_weight * 0.38
+  print('destination_weight')
+elif planet == 2:
+  destination_weight = earth_weight * 0.91
+  print('destination_weight')
+elif planet == 3:
+  destination_weight == earth_weight * 0.38
+  print('destination_weight')
+elif planet == 4:
+  destination_weight = earth_weight * 2.53
+  print('destination_weight')
+elif planet == 5:
+  destination_weight = earth_weight * 1.07
+  print('destination_weight')
+elif planet == 6:
+  destination_weight = earth_weight * 0.89
+  print('destination weight')
+elif planet == 7:
+  desstination_weight = earth_weight * 1.14
+  print('destination_weight')
+else:
+  print('invalid number')    
