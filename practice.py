@@ -307,3 +307,38 @@ elif planet == 7:
   print('destination_weight')
 else:
   print('invalid number')    
+
+print('BANK OF CODÉDEX')
+pin = int(input('Enter your PIN: '))
+while pin != 1234:
+  pin = int(input('Incorrect PIN. Enter your PIN again: '))
+if pin == 1234:
+  print('PIN accepted!')
+
+guess = 0
+tries = 0
+while guess != 6 and tries < 5:
+  guess = int(input('guess the number:'))
+  #update tries
+print(" you got it!")
+
+for i in range(100):
+  print('I will not throw airplanes in class room')
+
+for x in range(99 , 0 , -1):
+  print(f'{x} bottles of beer on the wall')
+  print(f'{x} bottles of beer')
+  print('take one down, pass it around')
+  print(f'{x-1} bottles of beer on the wall')
+
+for num in range(1,101):
+  if num % 3 == 0 and num % 5 == 0:
+    print('fizzbuzz')
+  elif num % 3 == 0:
+      print('fizz')
+  elif num % 5 == 0:
+      print('buzz')
+  else:
+      print(num)
+
+
