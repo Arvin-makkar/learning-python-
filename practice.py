@@ -315,3 +315,68 @@ while pin != 1234:
 if pin == 1234:
   print('PIN accepted!')
 
+guess = 0
+tries = 0
+while guess != 6 and tries < 5:
+  guess = int(input('guess the number:'))
+  #update tries
+print(" you got it!")
+
+for i in range(100):
+  print('I will not throw airplanes in class room')
+
+for x in range(99 , 0 , -1):
+  print(f'{x} bottles of beer on the wall')
+  print(f'{x} bottles of beer')
+  print('take one down, pass it around')
+  print(f'{x-1} bottles of beer on the wall')
+
+for num in range(1,101):
+  if num % 3 == 0 and num % 5 == 0:
+    print('fizzbuzz')
+  elif num % 3 == 0:
+      print('fizz')
+  elif num % 5 == 0:
+      print('buzz')
+  else:
+      print(num)
+
+answer = input('are we there yet?')
+while answer != 'yes':
+  answer = input('are we there yet?')
+
+for i in range(10,0,-1):
+  print(i)
+print('Happy New Year! 🥳')
+
+import random
+# 1. roll the two die for the first time
+die1 = random.randint(1,6)
+die2 = random.randint(1,6)
+total = die1 + die2
+
+# 2. keep loopint while the total is not 2
+while total != 2:
+  print('nope')
+  # reroll the die inside the loop to update the total 
+  die1 = random.randint(1,6)
+  die2 = random.randint(1,6)
+  total = die1 + die2
+  # 3 print the success message once the loop stops 
+  print('snake eye!')
+
+for i in range(1,25):
+  print('* '* i)
+
+# 1. ask the user for an integer and store it 
+number = int(input('enter a number:'))
+# 2. define a total variable with an identical value of 0 
+total = 0
+# 3. use a for loop to calculate the total of the squares 
+for i in range(1, number + 1):
+  total += i ** 2
+# 4. print the final integer output
+print(total)
+
+
+
