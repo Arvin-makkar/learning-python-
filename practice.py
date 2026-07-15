@@ -399,9 +399,42 @@ temp = [86, 80, 82, 87, 79, 80, 82]
 ph = [7.2, 7.1, 7.0, 7.0, 7.2, 7.1]
 now_playing = ['Barbie', 'Oppenheimer', 'Talk to Me', 'Blue Beetle']
 
+
 grocery = ['🥚 Eggs','🥑 Avocados','🍪 Cookies','🌶 Hot Pepper Jam','🫐 Blueberries','🥦 Broccoli']
 print(grocery)
 
+todo = ['🏦 Get quarters.','🧺 Do laundry.','🌳 Take a walk.','💈 Get a haircut.','🍵 Make some tea.','💻 Complete Lists chapter.','💖 Call mom.','📺 Watch My Hero Academia.'  ]
+print(todo[0])
+print(todo[1])
 
+print(todo[2:5])
+print(todo[5])   #this should given an index error
+
+
+lego_parts = [8980, 7323, 5343, 82700, 92232, 1203, 7319, 8903, 2328, 1279, 679, 589]
+print(min(lego_parts))
+print(max(lego_parts))
+
+books = [
+    'Harry Potter',
+    '1984',
+    'The Fault in Our Stars',
+    'The Mom Test',
+    'Life in Code'
+]
+
+books.append('Pachinko')
+books.remove('The Fault in Our Stars')
+books.pop(1)
+
+print(books)
+
+playlist = ["kesariya","heeriye","apna bana le","satranga","chaleya"] 
+print(playlist)
+
+things_to_do = ["travel to japan",
+"become a python developer",
+"build my own app"]
+print(things_to_do)
 
 
