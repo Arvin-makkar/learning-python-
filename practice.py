@@ -478,3 +478,74 @@ def distance_to_miles(distance):
 distance_to_miles(10000)
 
 
+def add(a, b):
+  return a + b
+
+def subtract(a, b):
+  return a - b
+
+def multiply(a, b):
+  return a * b
+
+def divide(a, b):
+  return a / b
+
+def exp(a, b):
+  return a ** b
+
+print(add(3, 5))
+print(subtract(7, 2))
+print(multiply(4, 8))
+print(divide(9, 3))
+print(exp(2, 3))
+
+
+stock_prices = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.65, 53.56, 49.85, 48.71, 48.71, 49.94, 48.53, 47.03, 46.59, 48.62, 44.21, 47.21]
+
+def price_at(i):
+  return stock_prices[i-1]
+
+def max_price(a, b):
+  mx = 0
+  for i in range(a, b + 1):
+    mx = max(mx, price_at(i))
+  return mx
+
+def min_price(a, b):
+  mn = price_at(a)
+  for i in range(a, b + 1):
+    mn = min(mn, price_at(i))
+  return mn
+
+print(max_price(1, 15))
+print(min_price(5, 10))
+print(price_at(3))
+
+
+def get_item(x):
+  if x == 1:
+    return '🍔 Cheeseburger'
+  elif x == 2:
+    return '🍟 Fries'
+  elif x == 3:
+    return '🥤 Soda'
+  elif x == 4:
+    return '🍦 Ice Cream'
+  elif x == 5:
+    return '🍪 Cookie'
+  else:
+    return "invalid option"
+
+def welcome():
+  print('Welcome to Sonnyboy\'s Diner!')
+  print('Here\'s the menu:')
+  print('1. 🍔 Cheeseburger')
+  print('2. 🍟 Fries')
+  print('3. 🥤 Soda')
+  print('4. 🍦 Ice Cream')
+  print('5. 🍪 Cookie')
+
+welcome()
+
+option = int(input('What would you like to order? '))
+print(get_item(option))
