@@ -672,3 +672,53 @@ pikachu.speak()
 charizard.speak()
 gyarados.speak()
 
+
+
+
+import random
+
+symbols = [
+  '🍒',
+  '🍇',
+  '🍉',
+  '7️⃣'
+]
+
+results = random.choices(symbols, k=3)
+print(f'{results[0]} | {results[1]} | {results[2]}')
+
+if (results[0] == '7️⃣' and results[1] == '7️⃣' and results[2] == '7️⃣'):
+ print('Jackpot! 💰')
+else:
+ print('Thanks for playing!')
+
+  from math import pi; from random import choice as ch
+
+planets = [
+ 'Mercury',
+ 'Venus',
+ 'Earth',
+ 'Mars',
+ 'Saturn'
+]
+
+random_planet = ch(planets)
+radius = 0
+
+if random_planet == 'Mercury':
+  radius = 2440
+elif random_planet == 'Venus':
+  radius = 6052
+elif random_planet == 'Earth':
+  radius = 6371
+elif random_planet == 'Mars':
+  radius = 3390
+elif random_planet == 'Saturn':
+  radius = 58232
+else:
+  print('Oops! An error occurred.')
+
+planet_area = 4 * pi * radius * radius
+
+print(f'Area of {random_planet}: {planet_area} sq mi')
+
