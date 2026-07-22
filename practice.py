@@ -722,3 +722,23 @@ planet_area = 4 * pi * radius * radius
 
 print(f'Area of {random_planet}: {planet_area} sq mi')
 
+
+import random
+
+bday_messages = [
+  'Hope you have a very Happy Birthday! 🎈',
+  'It\'s your special day – get out there and celebrate! 🎉',
+  'You were born and the world got better – everybody wins! Happy Birthday! 🥳',
+  'Have lots of fun on your special day! 🎂',
+  'Another year of you going around the sun! 🌞'
+]
+
+random_message = random.choice(bday_messages)
+
+
+import wikipedia
+
+print(wikipedia.search('Philosophy of life'))
+
+# OMG we're so proud of you! (╥﹏╥)
+print('Congrats ! you\'ve made it to the end of chapter one!  🫶')
